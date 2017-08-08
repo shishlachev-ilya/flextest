@@ -1,0 +1,175 @@
+@import '_normalize'
+@import '_popup'
+@import '_vars'
+
+body
+	background: $white
+	font-family: 'Lato', sans-serif
+	font-size: 16px
+	background: #fff
+	
+
+#small-dialog
+	background: white
+	padding: 20px 30px
+	text-align: left
+	max-width: 400px
+	margin: 40px auto
+	position: relative
+
+.wrapper
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+
+.container
+	display: flex
+	flex-direction: row
+	align-items: center
+	position: relative
+	width: 1170px
+	padding-left: 15px
+	padding-right: 15px
+
+.header
+	
+	// height: 175px
+.headerTop
+	display: flex
+	flex-direction: row
+	align-items: center
+	background: $header_bg
+	&__welcome
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		width: 51%
+		height: 47px
+		font-family: 'Montserrat', sans-serif
+		font-weight: 400
+		color: $color_1
+		font-size: 0.750em
+		&-text
+			text-transform: uppercase
+			font-weight: 700
+	&__login
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		width: 8%
+		height: 47px
+		border-right: 1px solid $border
+		border-left: 1px solid $border
+		&-link
+			color: $color_1
+			font-size: 0.75em
+			font-family: 'Montserrat', sans-serif
+			font-weight: 400
+			text-transform: uppercase
+	&__sign
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		width: 7.5%
+		height: 47px
+		text-align: center
+		border-right: 1px solid $border
+		&-link
+			color: $color_1
+			font-size: 0.75em
+			font-family: 'Montserrat', sans-serif
+			font-weight: 400
+			text-transform: uppercase
+	&__call
+		display: flex
+		flex-direction: column
+		justify-content: center
+		width: 20%
+		height: 47px
+		padding-left: 56px
+		border-right: 1px solid $border
+		&-link
+			color: #435061
+			font-size: 1.5em
+			font-family: 'Open Sans', sans-serif
+			font-weight: 700
+			line-height: 1
+			position: relative
+			&:before
+				content: url(../img/phone.png)
+				position: absolute
+				top: -7px
+				left: -30px
+		&-text
+			display: block
+			color: $color_1
+			font-size: 0.51em
+			font-family: 'Montserrat', sans-serif
+			font-weight: 400
+			text-transform: uppercase
+	&__message
+		display: flex
+		flex-direction: row
+		justify-content: flex-end
+		width: 13.5%
+		&-link
+			padding: 10px 16px
+			color: #fff
+			font-size: 0.875em
+			font-family: 'Montserrat', sans-serif
+			font-weight: 700
+			text-transform: uppercase
+			background: #ff551a
+			&:hover
+				background: darken(#ff551a, 15%)
+
+.headerCenter
+	display: flex
+	flex-direction: row
+	&__logo
+		flex: 1 1 50%
+
+	.logo_2
+		display: flex
+		flex-direction: row
+		justify-content: flex-end
+
+.headerNav
+	border-top: 1px solid $border
+	border-bottom: 1px solid $border
+
+.navList
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	
+	width: 100%
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+	&__item
+		padding: 15px 35px
+		border-right: 1px solid $border
+		text-align: center
+		&:first-child
+			padding-left: 10px
+		&:last-child
+			padding-right: 10px
+			border-right: 0
+		&-link
+			font-family: 'Montserrat', sans-serif
+			font-weight: 400
+			font-size: 0.875em
+			color: $color_1
+			text-transform: uppercase
+
+
+
+
+
+.main
+	flex-grow: 1
